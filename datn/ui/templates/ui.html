@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"
+      href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ui.css') }}" type="text/css">
+  </head>
+  <body>
+    <div class="chat">
+      <div class="chat-title">
+        <h1>Linda</h1>
+        <h2>Susen</h2>
+        <figure class="avatar">
+          <img src="/static/images/avatar.jpeg" />
+        </figure>
+      </div>
+      <div class="messages">
+        <div class="messages-content"></div>
+      </div>
+      <div class="message-box">
+        <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+        <button type="submit" class="message-submit" id="sendMessage">Send</button>
+      </div>
+    </div>
+    <div class="background"></div>
+  </body>
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="/static/js/ui.js"></script>
+</html>
